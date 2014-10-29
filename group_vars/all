@@ -1,0 +1,13 @@
+---
+
+tag_project: PROJECT
+env: production
+
+region: us-west-1
+zone: us-west-1c
+
+
+cloudwatch_dir: /usr/local
+aws_credential_file_src: /usr/local/cloudwatch/awscreds
+aws_credential_file_dest: "{{cloudwatch_dir}}/aws-scripts-mon/awscreds.template"
+alarm_recipients: ["arn:aws:sns:us-west-1:1234567890:alert"]

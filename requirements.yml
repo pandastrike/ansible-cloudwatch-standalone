@@ -1,0 +1,8 @@
+# from galaxy
+# ansible-galaxy install -r requirements.yml -p roles
+- src: git+ssh://git@github.com/pandastrike/ansible-cloudwatch-metrics.git
+  path: roles
+  scm: git
+- src: git+ssh://git@github.com/pandastrike/ansible-cloudwatch-alarms.git
+  paths: roles
+
